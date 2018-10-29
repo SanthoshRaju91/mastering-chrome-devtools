@@ -1,5 +1,4 @@
-function one() {
-  debugger;
+function one(foo) {
   console.log("Hello from function one!");
   two();
   three();
@@ -18,7 +17,7 @@ function four() {
   console.log("Hello from function four!");
 }
 
-one();
+one("bar");
 
 window.setInterval(() => {
   fetch("/api")
